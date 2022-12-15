@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Log In{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+    <div class="text-center col-md-4 ">     <!-- username email and password -->
+      <form method="post">
+        <label for="username">Username</label>
+            <input name="username" id="username" required>
+        <label for="password">Password</label>
+            <input type="password" name="password" id="password" required>
+        <button type="button" class="btn btn-primary">Log in</button>
+      </form>
+     </div>div>
+    <!-- <hr style="height:2px;border-width:0;color:gray;background-color:gray"> -->
+{% endblock %}
